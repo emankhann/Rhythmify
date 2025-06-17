@@ -1,0 +1,56 @@
+.sidebar {
+  width: 200px;
+  background: #111;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+}
+
+.logo {
+  margin-bottom: 32px;
+  padding-left: 4px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #a78bfa;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #b3b3b3;
+  font-size: 14px;
+  padding: 5px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+}
+
+.link-btn:hover {
+  color: white;
+}
+
+.disabled {
+  display: block;
+  color: #555;
+  padding: 5px;
+  font-size: 14px;
+  cursor: default;
+}
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px; /* Simplified margin */
+  margin-left: 0; /* Ensure no left margin */}

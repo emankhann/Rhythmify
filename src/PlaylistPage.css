@@ -1,0 +1,125 @@
+.playlist-page {
+  color: white;
+  padding: 10px 0 100px; /* Increased top padding to move content down */
+}
+
+.playlist-section {
+  margin-bottom: 50px;
+  padding-top: 15px; /* Added space between playlists */
+}
+
+.playlist-header {
+  display: flex;
+  align-items: center;
+  padding: 30px 40px; /* Slightly reduced vertical padding */
+  color: white;
+  background: linear-gradient(to bottom, #3a3a3a, #121212); /* Fixed gradient */
+  background-size: cover;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px; /* Added top margin */
+  border-radius: 8px; /* Optional: subtle rounded corners */
+}
+
+.playlist-header:hover {
+  background: linear-gradient(to bottom, #4a4a4a, #121212); /* Hover effect */
+}
+
+.playlist-cover {
+  height: 180px;
+  width: 180px;
+  margin-right: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.public-label {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #b3b3b3;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.owner {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.playlist-table {
+  width: 100%;
+  text-align: left;
+  margin-top: 25px; /* Increased margin */
+  border-collapse: collapse;
+}
+
+.playlist-table th {
+  color: #b3b3b3;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #282828;
+  padding: 12px 10px;
+}
+
+.playlist-table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #282828;
+}
+
+.track-title {
+  display: flex;
+  align-items: center;
+}
+
+.track-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.muted {
+  color: #b3b3b3;
+  font-size: 12px;
+}
+
+.clickable-row {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.clickable-row:hover {
+  background-color: #282828;
+}
+
+.clickable-row.playing {
+  background-color: #333333;
+}
+
+.playlist-table td:last-child {
+  text-align: right;
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .playlist-header {
+    flex-direction: column;
+    padding: 25px;
+    text-align: center;
+  }
+  
+  .playlist-cover {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  
+  .public-label, .owner {
+    text-align: center;
+  }
+}
